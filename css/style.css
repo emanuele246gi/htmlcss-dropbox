@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+nav{
+    
+}
+
+.logo{
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+img{
+    width: 200px;
+    height: 40px;
+    vertical-align: middle;
+    margin-top: 20px;
+
+}
+
+li{
+    text-align: center;
+    display: inline;
+
+}
+
+.quattro{
+    padding-left: 20px;
+}
