@@ -10,10 +10,12 @@
 
 nav{
     width: 100%;
-    max-width: 1500px;
     margin: 0 auto;
     padding-top: 20px;
     padding-left: 5px;
+    padding-bottom: 20px;
+    position: fixed;
+    background-color: white;
 }
 
 img{
@@ -62,4 +64,16 @@ li{
     line-height: 40px;
     display: inline;
     text-align: center;
+}
+
+.prima{
+    background-color: rgb(158, 193, 207);
+    width: 100%;
+    height: 100vh;
+}
+
+.seconda{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
 }
