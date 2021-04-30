@@ -94,6 +94,7 @@ li a, li a:hover, li a:visited, li a:focus{
     background-color: white;
     width: 100%;
     height: 100vh;
+    margin: auto;
 }
 
 .sezione-uno{
@@ -126,8 +127,80 @@ li a, li a:hover, li a:visited, li a:focus{
 }
 
 .sec{
-    margin-top: 150px;
     padding: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: absolute;
+    top: 520px;
 }
+
+.annulla{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 570px;
+}
+.fas{
+    width: 9px;
+    height: 4px;
+}
+
+.titolo-due{
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 140px;
+    margin-bottom: 50px;
+}
+
+.fatturazione{
+    margin-left: 255px;
+}
+
+.lista-fatt::before{
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    border: 1px solid #b8b8b8;
+    margin-right: 5px;
+}
+
+.lista-fat::before{
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    border: 5px solid #0061ff;
+    margin-right: 5px;
+}
+
+.riquadro{
+    margin-top: 20px;
+    display: inline;
+    float: left;
+    height: 600px;
+    width: 25%;
+    border: 1px solid #b8b8b8;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.centrale{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.intermedio{
+    width: 80%;
+    margin: auto;
+}
+
