@@ -13,41 +13,53 @@ nav{
     margin: 0 auto;
     padding-top: 20px;
     padding-left: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     position: fixed;
     background-color: white;
+    position: relative;
 }
 
 img{
     width: 150px;
-    height: 30px;
+    height: 30px; 
     vertical-align: middle;
-
-}
-
-ul{
     display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 li{
-    line-height: 40px;
     display: inline;
-    vertical-align: middle;
-    padding-left: 30px;
-}
-
-/* :not(.sette){
-    padding-left: 0px;
-} */
-
-.link{
+    list-style: none;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin-left: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
 }
 
-.quattro{
-    padding-left: 350px;
+li a, li a:hover, li a:visited, li a:focus{
+    color: black;
+    text-decoration: none;
+}
+
+.sette a, .sette a:hover, .sette a:visited, .sette a:focus{
+    color: white;
+    text-decoration: none;
+}
+
+.sinistra{
+    display: inline-block;
+    float: left;
+    margin-left: 200px;
+}
+
+.destra{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
 }
 
 .sei{
@@ -61,9 +73,9 @@ li{
     padding-left: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    line-height: 40px;
     display: inline;
     text-align: center;
+    margin-top: 20px;
 }
 
 .prima{
