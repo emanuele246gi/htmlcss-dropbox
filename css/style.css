@@ -8,6 +8,7 @@
     display: inline-block;
 }
 
+
 nav{
     width: 100%;
     margin: 0 auto;
@@ -17,6 +18,12 @@ nav{
     position: fixed;
     background-color: white;
     position: relative;
+}
+
+nav::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 img{
@@ -38,57 +45,132 @@ li{
     margin-left: 20px;
     line-height: 30px;
     padding-bottom: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
-li a, li a:hover, li a:visited, li a:focus{
+a{
     color: black;
     text-decoration: none;
 }
 
-.sette a, .sette a:hover, .sette a:visited, .sette a:focus{
-    color: white;
-    text-decoration: none;
-}
-
 .sinistra{
-    display: inline-block;
     float: left;
     margin-left: 200px;
 }
 
 .destra{
-    display: inline-block;
     float: right;
     margin-right: 20px;
 }
 
 .sei{
-    padding-right: 20px;
+    padding-right: 5px;
 }
 
 .fir{
     margin-top: 10px;
     vertical-align: middle;
+    margin-left: 10px;
+    display: inline;
+    text-align: center;
 }
 
 .tasto{
     background-color: #0061ff;
     color: white;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    display: inline;
-    text-align: center;
+    padding: 8px 20px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.prima{
-    background-color: rgb(158, 193, 207);
-    width: 100%;
-    height: 100vh;
+nav ul li:hover {
+    border-bottom: solid 2px #000;
+    background-color: rgb(241, 241, 241);
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
+
+.tasto:hover{
+    background-color: #428bff;
+}
+
+header {
+    border-bottom: solid 1px #d0d0d3;
+    background-color: #fff;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+
+
+/* Prima sezione */
+
+.prima-foto {
+    max-width: 100%;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: 230px;
+    left: 500px;
+}
+
+.sezione-uno{
+    width: 80%;
+    height: 100vh;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.prima {
+    margin-top: 70px;
+    background-color: #b4d0e7;
+}
+
+.prima .sezione-uno{
+    width: 90%;
+    max-width: 1320px;
+    position: relative;
+    bottom: -80px;
+}
+
+h1{
+    font-size: 77px;
+    line-height: 108px;
+    margin-bottom: 40px;
+}
+
+.prima .testo{
+    float: left;
+    width: 30%;
+    line-height: 25px;
+    font-size: ;
+}
+
+.prima .testo p{
+    margin-bottom: 30px;
+}
+
+.prima .annulla {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+.prima .destra-foto {
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+}
+
+
+/* Seconda sezione */
 
 .seconda{
     background-color: white;
@@ -97,55 +179,7 @@ li a, li a:hover, li a:visited, li a:focus{
     margin: auto;
 }
 
-.sezione-uno{
-    padding-top: 40px;
-    margin-right: 45px;
-    padding-left: 100px;
-    position: relative;
-}
-
 .titolo{
-    font-size: 65px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.testo{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    font-size: 20px;
-    max-width: 370px;
-    line-height: 30px;
-}
-
-.prima-foto{
-    height: fit-content;
-    width: fit-content;
-    position: absolute;
-    top: 350px;
-    left: 550px;
-}
-
-.sec{
-    padding: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 520px;
-}
-
-.annulla{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    position: absolute;
-    top: 570px;
-}
-.fas{
-    width: 9px;
-    height: 4px;
-}
-
-.titolo-due{
     font-size: 35px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -244,4 +278,23 @@ li a, li a:hover, li a:visited, li a:focus{
 .mese{
     font-size: 15px;
     color: #575757;
+}
+
+.descrizione{
+    position: relative;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+.utentfe{
+    position: absolute;
+    left: 10px;
+    height: 20px;
+}
+
+.utente{
+    padding-top: ;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
